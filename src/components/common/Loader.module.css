@@ -1,0 +1,78 @@
+.loader-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: var(--bg-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.tropical-svg {
+    width: 120px;
+    height: 120px;
+}
+
+.svgSun {
+    fill: var(--accent-gold);
+    transform-origin: 50px 45px;
+    animation: sunsetPulse 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate; 
+}
+
+.svgWave {
+    stroke: var(--primary-600);
+    stroke-dasharray: 100;
+    animation: waveRoll 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+.loaderText{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--primary-900);
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    animation: textFade 0.75s ease-in-out infinite alternate;
+}
+
+/* Animations */
+
+@keyframes sunsetPulse {
+    from {
+        transform: scale(0.85);
+        opacity: 0.6;
+        filter: drop-shadow(0 0 2px rgba(227,193,138,0.4));
+    }
+
+    to {
+        transform: scale(1.05);
+        opacity: 1;
+        filter: drop-shadow(0 0 12px rgba(227,198,138,0.8));
+    }
+}
+
+@keyframes waveRoll {
+    0% {
+        stroke-dashoffset: 100;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -100;
+    }
+}
+
+@keyframes textFade {
+    from { opacity: 0.4; }
+    to { opacity: 0.9; }
+}
