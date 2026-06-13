@@ -1,0 +1,150 @@
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30rem;
+    background-color: var(--bg-main);
+    line-height: 2;
+    gap: 3rem;
+}
+
+.aboutSection img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+    height: 400px;
+}
+
+.storyOverlay {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, #f4f4fc 100%);
+    z-index: 1;
+}
+
+.storyContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: contentReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes contentReveal {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.mainHeading, .card h3, .coreValuesHeading {
+    text-align: center;
+    font-size: 4rem;
+    background: linear-gradient(var(--accent-gold-dark), var(--accent-gold-light));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+}
+
+.para, .card p, .subText {
+    text-align: center;
+    margin: 2rem 5rem;
+    font-size: 1.2rem;
+    color: var(--primary-800);
+    font-family: 'Poppins', monospace, serif;
+}
+
+.coreValues {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 4rem;
+}
+
+.valueGrid {
+    display: grid;
+    overflow: hidden;
+    grid-template-areas: 
+    "excellence customers"
+    "trust      global"
+    "assistance assistance";
+    gap: 0.8rem;
+}
+
+.valueItem {
+    border: 1px solid;
+    padding: 2rem 1.5rem;
+    background-color: var(--accent-gold-light);
+    border-radius: 8px;
+} 
+
+.valueItem:nth-child(1) { grid-area: excellence; }
+.valueItem:nth-child(2) { grid-area: customers; }
+.valueItem:nth-child(3) { grid-area: trust; }
+.valueItem:nth-child(4) { grid-area: global; }
+.valueItem:nth-child(5) { grid-area: assistance; }
+
+.valueTitle {
+    font-size: 1.2rem;
+    color: var(--primary-800);
+}
+
+.valueDesc {
+    font-size: 0.9rem;
+    color: var(--primary-400);
+}
+
+@media (max-width: 640px) {
+    .mainHeading, .card h3, .coreValuesHeading {
+        margin: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .para, .card p, .subText {
+        margin: 2rem 2.8rem;
+        font-size: 0.9rem;
+    }
+
+    .valueGrid {
+        grid-template-areas: "excellence" "customers" "trust" "global" "assistance";
+    }
+
+    .valueItem {
+        padding: 2.6rem 1rem;
+    }
+
+    .valueTitle {
+        font-size: 1.5rem;
+        line-height: 1;
+        margin: 1rem 0;
+    }
+
+    .valueDesc {
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .para, .card p, .subText {
+        margin: 2rem 10rem;
+    }
+
+    .valueGrid {
+        margin: 4rem 6rem;
+    }
+}
+
+
+

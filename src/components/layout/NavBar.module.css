@@ -1,0 +1,116 @@
+.navWrapper {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0 24px;
+  z-index: 10;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 36px;
+  width: 100%;
+  max-width: 1200px;
+  
+  background-color: rgba(255,255,255,0);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid transparent;
+  padding: 14px 32px;
+  box-shadow: 0 10px 30px rgba(22,22,59,0);
+
+  transition: 
+  background-color 0.4s ease,
+  border-color 0.4s ease,
+  box-shadow 0.4s ease,
+  backdrop-filter 0.4s ease,
+  padding 0.4s ease,
+  -webkit-backdrop-filter 0.4s ease;
+}
+
+.navBar.scrolled {
+  background-color: rgba(255,255,255,0.5);
+  border-color: var(--border-subtle);
+  box-shadow: 0 10px 30px rgba(22, 22, 59, 0.08);
+  padding: 10px 28px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo span {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-50);
+  transition: color 0.3s ease;
+}
+
+.navBar.scrolled .logo span {
+  color: var(--primary-500);
+}
+
+.logo span:last-child {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary-50);
+  transition: color 0.4s ease;
+}
+
+.navBar.scrolled .logo span:last-child {
+  color: var(--primary-500);
+}
+
+.navItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.navItems a {
+  text-decoration: unset;
+  padding: 6px;
+  color: var(--primary-50);
+  font-weight: 500;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.4s ease;
+}
+
+.navBar.scrolled .navItems a {
+  color: var(--primary-800);
+}
+
+.navItems a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  background: var(--accent-gold-dark);
+  transform: translateX(-50%);
+  width: 0;
+  height: 4px;
+  transition: width 0.4s ease;
+  border-radius: 12px;
+}
+
+.navItems a:hover::after {
+  width: 80%;
+}
+
+@media (width <= 580px) {
+  .navItems{
+    display: none;
+  }
+}

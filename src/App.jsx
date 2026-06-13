@@ -1,13 +1,30 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { Home } from "./pages/Home"
+import { Home } from "./features/pages/Home"
 import { path } from "framer-motion/client"
 import { useEffect, useState } from "react"
 import { Loader } from "./components/common/Loader"
+import { RootLayout } from "./components/layout/RootLayout"
+import { Contact } from "./features/pages/Contact"
+import { About } from "./features/pages/About/About"
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>
+    element: <RootLayout/>,
+    children: [
+      {
+        index: true,
+        element: <Home/>
+      },
+      {
+        path: 'about',
+        element: <About />
+      },
+      {
+        path: 'contact',
+        element: <Contact/>
+      }
+    ]
   }
 ])
 

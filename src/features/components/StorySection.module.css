@@ -1,0 +1,130 @@
+/* ============
+   Story Card 
+==============*/
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  
+}
+
+.imgContainer img {
+  height: 550px;
+  width: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+  display: block;
+}
+
+.years {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border-strong);
+  border-radius: 20px;
+  padding: 24px 32px;
+  box-shadow: 0 15px 30px rgba(22, 22, 59, 0.12);
+}
+
+.years span:first-child{
+  color: var(--primary-700);
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.years span:last-child {
+  color: var(--primary-900);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.infoContainer h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--primary-950);
+  line-height: 1.2;
+}
+
+.infoContainer p:first-of-type {
+  color: var(--primary-600);
+  font-size: 1.05rem;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  padding-left: 16px;
+  border-left: 4px solid var(--accent-gold);
+}
+
+.infoContainer p {
+  font-family: 'Poppins','Inter', serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.infoContainer p em {
+  color: var(--accent-gold-dark);
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .infoContainer {
+    align-items: center;
+    text-align: center;
+  }
+
+  .infoContainer p:first-of-type {
+    border-left: none;
+    padding-left: 0px;
+  }
+
+  .years {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .years {
+    display: none;
+  }
+  .imgContainer img {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1025px) {
+   .storyGrid {
+     grid-template-columns: repeat(2,1fr);
+   }
+}
