@@ -15,7 +15,7 @@ export function About() {
     return(
         <div className={styles.aboutSection}>
             <div className={styles.storyOverlay}></div>
-            <img src="src/assets/blue-bg.jpg" alt="" />
+            <img src="blue-bg.jpg" alt="" />
             <div className={styles.storyContent}>
                 <h2 className={styles.mainHeading}>Our Story</h2>
                 <p className={styles.para}>Operating from our base at Heiley Offices, Pallath Square, Kalamassery, Luxe Voyages brings together global travel partnerships and local expertise to create exceptional journeys tailored to every traveler’s expectations.</p>
