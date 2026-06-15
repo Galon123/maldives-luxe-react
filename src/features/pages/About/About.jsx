@@ -1,5 +1,6 @@
 
 import { Award, Clock, Globe, Heart, Shield } from "lucide-react"
+import blueBgImg from "../../../assets/blue-bg.jpg"
 import styles from "./About.module.css"
 
 const VALUES = [
@@ -15,12 +16,11 @@ export function About() {
     return(
         <div className={styles.aboutSection}>
             <div className={styles.storyOverlay}></div>
-            <img src="blue-bg.jpg" alt="" />
+            <img src={blueBgImg} alt="" />
             <div className={styles.storyContent}>
                 <h2 className={styles.mainHeading}>Our Story</h2>
                 <p className={styles.para}>Operating from our base at Heiley Offices, Pallath Square, Kalamassery, Luxe Voyages brings together global travel partnerships and local expertise to create exceptional journeys tailored to every traveler’s expectations.</p>
                 <p className={styles.para}>Our strength lies in our carefully built international network of trusted partners, premium accommodations, curated experiences, and reliable travel support systems that ensure every trip is smooth, secure, and memorable.</p>
-                <p className={styles.para}>Whether you seek a serene overwater villa in the Maldives, the magical Northern Lights of Lapland, a romantic European escape, or an unforgettable Antarctic expedition, our team is committed to transforming your travel vision into reality.</p>
             </div>
                 
             <div className={styles.card}>

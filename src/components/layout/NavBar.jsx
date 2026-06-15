@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom";
+import logoWhite from "../../assets/logo_white.png"
+import logoBlue from "../../assets/logo_blue.png"
 import styles from './NavBar.module.css';
 
 export function NavBar() {
@@ -24,9 +26,12 @@ export function NavBar() {
         <div className={styles.navWrapper}>
             <div className={`${styles.navBar} ${isScrolled? `${styles.scrolled}` : ''}`}>
                 <div className={styles.logo}>
-                    <span>MALDIVES</span>
-                    <span>LUXE</span>
-                    <span>V o y a g e s</span>
+                    <img src={`${isScrolled? `${logoBlue}`: `${logoWhite}`}`} alt="" />
+                    <span className={styles.logoText}>
+                        <span>MALDIVES</span>
+                        <span>LUXE</span>
+                        <span>V o y a g e s</span>
+                    </span>
                 </div>
                 <div className={styles.navItems}>
                     <NavLink to="/" end>Home</NavLink>
