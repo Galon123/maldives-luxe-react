@@ -16,6 +16,10 @@
   --accent-gold:       #e3c18a; /* Accent borders, rating stars, luxury tags */
   --accent-gold-dark:  #b5935b; /* Text links on light gold backgrounds */
 
+  --muted-foreground: #464646;
+  --border-light: #e2e2e2;
+  --border: #b8b8b8;
+  --border-dark: #7a7a7a;
 
   --bg-main:       var(--primary-50);
   --bg-surface:    #ffffff;
