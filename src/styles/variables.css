@@ -20,8 +20,9 @@
   --border-light: #e2e2e2;
   --border: #b8b8b8;
   --border-dark: #7a7a7a;
-
+  
   --bg-main:       var(--primary-50);
+  --bg-grey: #cecece;
   --bg-surface:    #ffffff;
   --text-main:     var(--primary-900);
   --text-muted:    var(--primary-500);

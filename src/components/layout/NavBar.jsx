@@ -37,7 +37,7 @@ export function NavBar() {
                     <NavLink to="/" end>Home</NavLink>
                     <NavLink to="/about">About</NavLink>
                     <NavLink to="/contact">Contact</NavLink>
-                    <NavLink to="/packages">Packages</NavLink>
+                    <NavLink to="/resorts">Resorts</NavLink>
                 </div>
             </div>
         </div>

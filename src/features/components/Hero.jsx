@@ -9,7 +9,7 @@ export function Hero() {
                 <div class={styles['hero-content']}>
                     <h1>Redefining the Art of <br/><em>Maldivian Luxury</em></h1>
                     <p>With us, your Maldives story is not just about where you stay, but how you feel.</p>
-                    <button class={styles['cta-btn']}>Explore Packages</button>
+                    <button class={styles['cta-btn']}>Explore Resorts</button>
                 </div>
             </section>
         </main>

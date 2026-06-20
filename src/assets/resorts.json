@@ -1,14 +1,268 @@
 [
     {
-        "name" : "Amila Maldives",
-        "rating" : 5,
-        "location" : "Baa Atoll",
-        "description" : ""
+        "name": "Amilla Maldives",
+        "location": "Baa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Surrounded by crystal clear waters, Amilla Maldives combines contemporary architecture with a unique philosophy drawing upon the Maldives' fascinating cultural heritage. Known for its spacious residences and avant-garde design, it offers tailored wellness plans and isolated luxury."
     },
     {
-        "name" : "Amari Havodda Maldives",
-        "rating" : 5,
-        "location" : "Baa Atoll",
-        "description" : ""
+        "name": "Amari Havodda Maldives",
+        "location": "Southern Gaafu Dhaalu Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Amari Havodda Maldives is a private beach resort situated in one of the most untouched archipelagos in the Indian Ocean. Idyllically located in the southern Gaafu Dhaalu atoll, it boasts an incredible house reef, pristine sandy beaches, and traditional Maldivian-inspired design architecture."
+    },
+    {
+        "name": "Angsana Velavaru",
+        "location": "Baa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Known as 'Turtle Island', Angsana Velavaru invites guests to a fairytale lagoon setting. Famous for its completely freestanding overwater villas separated from the main island, it offers an immersive marine experience paired with vibrant tropical styles."
+    },
+    {
+        "name": "Atmosphere Kanifushi",
+        "location": "Lhaviyani Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Located in the stunning Lhaviyani Atoll, Atmosphere Kanifushi features luxurious beachfront villas stretched along a massive 2-kilometer turquoise lagoon. The resort offers premium all-inclusive plans blending high-end living with local cultural activities."
+    },
+    {
+        "name": "Bandos Island Resort & Spa",
+        "location": "Baa Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Lapped by the vast expanse of the Indian Ocean, Bandos is blissfully marooned away from everyday hustle. Renowned as one of the oldest and most trusted family-friendly resorts, it features lush green vegetation and a magnificent house reef."
+    },
+    {
+        "name": "Banyan Tree Vabbinfaru",
+        "location": "North Male Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "An intimate island haven made for couples, cocooned in shimmering turquoise waters, swaying coconut trees, and pure white sand. Located in the North Male Atoll, it focuses on marine conservation alongside high-end private pool villa privacy."
+    },
+    {
+        "name": "Conrad Maldives Rangali Island Resort",
+        "location": "Baa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Reached by a scenic seaplane flight, Conrad Maldives Rangali Island enjoys an elite position spanning across two interconnected islands. It is globally famous for hosting the world's first undersea restaurant and pioneering underwater resort experiences."
+    },
+    {
+        "name": "Dhigufaru Island Resort",
+        "location": "Baa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Nestled on the protected UNESCO Biosphere Reserve of Baa Atoll, Dhigufaru perfectly captures the exotic getaway aesthetic. With a name meaning 'a long reef', it offers expansive lagoons and multi-themed wellness layouts."
+    },
+    {
+        "name": "Fihalhohi Island Resort",
+        "location": "Baa Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Fihalhohi offers a captivating view of the Indian Ocean amidst natural tropical beauty. Acting as an absolute paradise island escape, it focuses on traditional Maldivian hospitality, exceptional diving sites, and accessible relaxation."
+    },
+    {
+        "name": "Gilli Lankanfushi",
+        "location": "Baa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "A Robinson Crusoe fantasy come to life, Gili Lankanfushi features the world's largest stand-alone overwater villa stretching across the ocean. Crafted entirely from sustainable materials, it provides unparalleled overwater luxury with private butler service."
+    },
+    {
+        "name": "Heritance Aarah Maldives",
+        "location": "Baa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Heritance Aarah offers direct beach access, wide verandas, and ultimate comfort in premium overwater and beach villas. Perfect for couples and families alike, it presents an exceptional premium all-inclusive culinary journey."
+    },
+    {
+        "name": "Holiday Inn Resort Kandooma",
+        "location": "South Male Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Conveniently situated on the South Male Atoll, this internationally recognized brand is adjacent to world-class surfing and diving sites. It blends modern, functional comfort with easy ocean access and family-centric activities."
+    },
+    {
+        "name": "InterContinental Maldives Maamunagau Resort by IHG",
+        "location": "Raa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Nestled in the pristine Raa Atoll, this resort offers an unrivalled private island retreat for honeymooners and families. It is unique for its dedicated Club InterContinental benefits extended to every single guest on the island."
+    },
+    {
+        "name": "Jawakara Islands Maldives",
+        "location": "Baa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Consisting of two stunning islands connected by a scenic bridge, Jawakara brings traditional Maldivian luxury forward with a vibrant, modern twist. It caters perfectly to multi-generational family getaways."
+    },
+    {
+        "name": "Joali Maldives",
+        "location": "Raa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "An art-immersive luxury island resort nestled in the northern reaches of the Raa Atoll. Joali stands out for its brilliant interactive art installations scattered across the island, exquisite design aesthetics, and unconventional eco-luxury philosophy."
+    },
+    {
+        "name": "Jumeirah Olhahali Island Maldives",
+        "location": "North Male Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "This elegant all-villa resort stands out for its signature contemporary Mediterranean design, featuring panoramic flat rooftop decks. Tucked away in the North Male Atoll, it redefines ultra-luxury island living."
+    },
+    {
+        "name": "Kihaa Maldives",
+        "location": "Baa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Located exceptionally close to Hanifaru Bay, Kihaa allows guests to easily dig their toes into powdery white sand and dive alongside manta rays. It represents classic beachside luxury in the heart of a Biosphere Reserve."
+    },
+    {
+        "name": "Kurumathi Island",
+        "location": "Baa Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "A large tropical paradise offering lush greenery, white-sand beaches, and crystal-clear lagoons. Kuramathi stands out for its immense variety of villa categories, multiple fine-dining restaurants, and a stunning long sandbank trailing into the horizon."
+    },
+    {
+        "name": "Lux South Ari Atoll",
+        "location": "Baa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "LUX South Ari Atoll pairs top-tier luxury with playful local experiences. Featuring vibrant beach clubs, impromptu pop-up bars, and a vast marine protected area famous for year-round whale shark sightings."
+    },
+    {
+        "name": "Hilton Maldives Amingiri Resort & Spa",
+        "location": "Baa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Located just 20 minutes by boat from Male, this modern resort offers beach and overwater villas equipped with private pools. It features an array of eight unique restaurants and an immersive wellness center."
+    },
+    {
+        "name": "Malahini Kuda Bandos",
+        "location": "Baa Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "This boutique resort offers Maldivian luxury combined with a low-key, highly friendly vibe. It is ideal for travelers looking for a casual atmosphere without compromising on outstanding personalized service."
+    },
+    {
+        "name": "Medhufushi Island Resort",
+        "location": "Baa Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Medhufushi Island Resort is a haven of peace and complete relaxation. An air of tranquility pervades the entire idyllic island, adorned beautifully with shady coconut trees and colorful tropical flora."
+    },
+    {
+        "name": "Mercure Maldives Kooddoo Resort",
+        "location": "Baa Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Offering stylish boutique accommodation in the pristine southern waters, Mercure Kooddoo stands out as an exceptional value-for-money all-inclusive resort directly integrated with a local domestic airport island."
+    },
+    {
+        "name": "Niyama Pvt Island Maldives",
+        "location": "Baa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Ranked among the best resorts in the world, Niyama allows guests to choose between twin islands named 'Chill' and 'Play'. It features the world's first underwater nightclub and highly dynamic luxury activities."
+    },
+    {
+        "name": "NOOE Maldives Kunaavashi",
+        "location": "Baa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "NOOE Maldives Kunaavashi is an island paradise created to help travelers rediscover a balanced lifestyle. It features breathtaking white sand beaches and stylish architecture designed for complete mental restoration."
+    },
+    {
+        "name": "Centara Grand Lagoon Maldives",
+        "location": "North Male Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "A magnificent ocean sanctuary ideal for group travelers and families seeking world-class dining, upscale comfort, and seamless connection. It blends warm Thai hospitality styles with Maldivian beauty."
+    },
+    {
+        "name": "Centara Mirage Lagoon Maldives",
+        "location": "North Male Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Located in the heart of the North Male Atoll, this enchanting underwater world-themed paradise focuses heavily on family-boundless fun, unique water attractions, and interactive bonding activities."
+    },
+    {
+        "name": "Centara Ras Fushi",
+        "location": "North Male Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "An adults-exclusive premium resort located just 15 minutes by speedboat from Male airport. It serves as an irresistible haven for couples seeking intimate overwater villas and vibrant water sports."
+    },
+    {
+        "name": "Cinnamon Dhonveli Resort",
+        "location": "North Male Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Offering direct access to the world-renowned Pasta Point surf break, Cinnamon Dhonveli is a dream destination for water sports enthusiasts. It features diverse accommodation options ranging from garden suites to overwater suites."
+    },
+    {
+        "name": "Cinnamon Lagoon Hakuraa Huraa",
+        "location": "Meemu Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Featuring pristine white tent-roofs and a half-kilometer-long jetty, this destination is explicitly tailored for romantic intimacy and quiet rejuvenation on a beautifully secluded reef."
+    },
+    {
+        "name": "Cinnamon Velifushi Maldives",
+        "location": "Vaavu Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "A premium property facing a spectacular beachfront in Vaavu Atoll. It features Italian-inspired design elements, vast open-plan overwater structures, and a surrounding marine environment known for nurse shark diving."
+    },
+    {
+        "name": "Four Seasons Resort At Landaa Giraavaru",
+        "location": "Baa Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "A pure expression of function over form, blending clean architecture with flawless Four Seasons service. It is a premier marine conservation hub situated deeply within the Baa Atoll UNESCO reserve."
+    },
+    {
+        "name": "JW Marriott",
+        "location": "Shaviyani Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "A tropical island paradise situated in the Shaviyani Atoll where meaningful experiences are crafted. It features iconic architecture inspired by the graceful manta ray and an extensive kids' club."
+    },
+    {
+        "name": "JW Marriott Kaafu Atoll Resort Maldives",
+        "location": "Kaafu Atoll",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Blends elegant high-end design elements with impeccable luxury service. Surrounded by pathways lined with tropical blooms and an active lagoon, it provides quick access to deep-sea diving spots."
+    },
+    {
+        "name": "OBLU At Sangeli Maldives",
+        "location": "Kaafu Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Situated on the northwestern tip of Male Atoll, this vibrant resort features colorful contemporary designs and a separate adults-only island wing named 'One Banyan', paired with a generous premium holiday plan."
+    },
+    {
+        "name": "Oblu By Atmosphere At Helengeli",
+        "location": "North Male Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "A true diver's paradise situated on a renowned channel location. Helengeli features a vibrant house reef just steps from the beach, frequented regularly by reef sharks, sea turtles, and rich marine life."
+    },
+    {
+        "name": "OBLU SELECT Lobigili",
+        "location": "Male",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "An exclusive adults-only haven whose name translates directly to 'Love Island'. It features romantic overwater villas, private pool settings, and a fully underwater dining venue."
+    },
+    {
+        "name": "OBLU XPERIENCE Ailafushi",
+        "location": "Kaafu Atoll",
+        "rating": 4,
+        "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
+        "info": "Elevates tropical island living through value-driven services, playful modern design, and smart technology. Its name translates to 'Family Island', catering beautifully to effortless, fun group travel."
     }
 ]

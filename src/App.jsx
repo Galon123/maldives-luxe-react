@@ -4,7 +4,7 @@ import { path } from "framer-motion/client"
 import { useEffect, useState } from "react"
 import { Loader } from "./components/common/Loader"
 import { RootLayout } from "./components/layout/RootLayout"
-import { Contact } from "./features/pages/Contact"
+import { Contact } from "./features/pages/Contact/Contact"
 import { About } from "./features/pages/About/About"
 
 const router = createBrowserRouter([
@@ -23,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         element: <Contact/>
+      },
+      {
+        path: 'resorts',
+        element: null
       }
     ]
   }
