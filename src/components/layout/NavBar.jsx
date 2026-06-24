@@ -3,10 +3,31 @@ import { NavLink } from "react-router-dom";
 import logoWhite from "../../assets/logo_white.png"
 import logoBlue from "../../assets/logo_blue.png"
 import styles from './NavBar.module.css';
+import { MenuIcon } from "lucide-react";
 
 export function NavBar() {
 
     const [isScrolled, setIsScrolled] = useState(false)
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+
+    const dropDownBtn = document.getElementById("dropDownBtn")
+
+    const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen)
+
+    useEffect(() => {
+        const handleDropDown = () => {
+            const dropdown = document.getElementById("dropdownMenu")
+
+            if(isDropdownOpen && window.innerWidth <= 580) {
+                dropdown.style.display = "flex"
+            }
+            else {
+                dropdown.style.display = "none"
+            }
+        };
+        handleDropDown()
+    }, [isDropdownOpen])
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -39,6 +60,17 @@ export function NavBar() {
                     <NavLink to="/contact">Contact</NavLink>
                     <NavLink to="/resorts">Resorts</NavLink>
                 </div>
+                <div className={styles.mobileNavItems}>
+                    <button onClick={toggleDropdown} id="dropDownBtn">
+                        <MenuIcon size={30}/>
+                    </button>
+                </div>
+            </div>
+            <div id="dropdownMenu" className={`${styles.dropdownMenu} ${isScrolled? `${styles.scrolled}`: ''}`}>
+                <NavLink to="/" end>Home</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/resorts">Resorts</NavLink>
             </div>
         </div>
     )

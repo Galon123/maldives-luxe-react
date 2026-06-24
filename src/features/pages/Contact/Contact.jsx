@@ -1,6 +1,6 @@
 import { style } from "framer-motion/client"
 import styles from "./Contact.module.css"
-import { Building, Locate, LocateIcon, Mail, MapPin, Phone } from "lucide-react"
+import { Building, Building2, Locate, LocateIcon, Mail, MapPin, Phone } from "lucide-react"
 
 
 export function Contact() {
@@ -12,7 +12,7 @@ export function Contact() {
                     <h2>Crafting your unwritten legacy</h2>
                     <ul className={styles.contactItems}>
                         <li>
-                            <Building color="white" size={36}/>
+                            <Building2 color="white" size={36}/>
                             <div>
                                 <h3>Headquarters</h3>
                                 <p>Heily Offices Pvt Ltd, Pallath Sqaure, FACT Kalamassery Rd, Kalamassery P.O, Ernakulam-683104</p>
@@ -22,7 +22,7 @@ export function Contact() {
                             <Phone color="white" size={36}/>
                             <div>
                                 <h3>Phone</h3>
-                                <p>+91 8089082841</p>
+                                <p>+918089082841</p>
                             </div>
                         </li>
                         <li>
@@ -53,7 +53,7 @@ export function Contact() {
                                 <h6>Resort Category :</h6>
                                 <select id="resortCategory">
                                     <option value="beach villa">Beach Villa</option>
-                                    <option value="beach pool villa">Beach Pool Villa</option>
+                                    <option value="beach villa with pool">Beach Villa with Pool</option>
                                     <option value="deluxe beach villa">Deluxe Beach Villa</option>
                                     <option value="water villa">Water Villa</option>
                                     <option value="water villa with pool">Water Villa with Pool</option>
@@ -66,7 +66,7 @@ export function Contact() {
                                 <input type="text" placeholder="Oct 12-16,2026" id="date" required/>
                             </label>
                             <label htmlFor="people">
-                                <h6>Number of People</h6>
+                                <h6>No. of People Travelling</h6>
                                 <input type="text" id="people" required/>
                             </label>
                         </span>
