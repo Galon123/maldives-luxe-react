@@ -45,18 +45,34 @@
 }
 
 .dropdownMenu {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 24px;
+  width: calc(100% - 48px);
+  max-width: 320px;
+
+  display: flex;
   flex-direction: column;
-  opacity: 0.85;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0.8rem 0 0 55vw;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem 0;
   background-color: var(--accent-gold-light);
-  display: none;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 15px 35px rgba(22, 22, 59, 0.12);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease, background-color 0.4s ease;
+}
+
+.dropdownMenu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .dropdownMenu.scrolled {
-  background-color: var(--primary-50);
+  background-color: #ffffff;
 }
 
 .dropdownMenu>a{
@@ -67,6 +83,11 @@
   font-family: 'Playfair Display';
   font-weight: 600;
   padding: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.dropdownMenu>a:hover{
+  color: var(--accent-gold-dark);
 }
 
 .mobileNavItems {
@@ -80,10 +101,6 @@
   outline: none;
   border: none;
   cursor: pointer;
-}
-
-.mobileNavItems>button:hover{
-  background-color: var(--primary-100);
 }
 
 .logo {
@@ -145,23 +162,10 @@
   color: var(--primary-800);
 }
 
-.navItems a::after {
+.navItems a::after{
   content: '';
   position: absolute;
   bottom: -4px;
-  left: 50%;
-  background: var(--accent-gold-dark);
-  transform: translateX(-50%);
-  width: 0;
-  height: 4px;
-  transition: width 0.4s ease;
-  border-radius: 12px;
-}
-
-.dropdownMenu a::after {
-  content: '';
-  position: absolute;
-  bottom: 8px;
   left: 50%;
   background: var(--accent-gold-dark);
   transform: translateX(-50%);
@@ -175,22 +179,18 @@
   width: 80%;
 }
 
-.dropdownMenu>a:hover::after {
-  width: 40%;
-}
-
 @media (width <= 770px) {
   .logo img {
     display: none;
   }
 }
 
-@media (width <= 580px) {
+@media (width <= 640px) {
   .navItems{
     display: none;
   }
 
   .mobileNavItems{
-    display: initial;
+    display: block;
   }
 }

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import logoWhite from "../../assets/logo_white.png"
 import logoBlue from "../../assets/logo_blue.png"
 import styles from './NavBar.module.css';
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 
 export function NavBar() {
 
@@ -13,20 +13,7 @@ export function NavBar() {
     const dropDownBtn = document.getElementById("dropDownBtn")
 
     const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen)
-
-    useEffect(() => {
-        const handleDropDown = () => {
-            const dropdown = document.getElementById("dropdownMenu")
-
-            if(isDropdownOpen && window.innerWidth <= 580) {
-                dropdown.style.display = "flex"
-            }
-            else {
-                dropdown.style.display = "none"
-            }
-        };
-        handleDropDown()
-    }, [isDropdownOpen])
+    const closeDropdown = () => setIsDropdownOpen(false)
 
 
     useEffect(() => {
@@ -62,15 +49,15 @@ export function NavBar() {
                 </div>
                 <div className={styles.mobileNavItems}>
                     <button onClick={toggleDropdown} id="dropDownBtn">
-                        <MenuIcon size={30}/>
+                        {isDropdownOpen ? <X size={30} color={isScrolled ? "var(--primary-800)" : "var(--primary-400)"} /> : <MenuIcon size={30} />}
                     </button>
                 </div>
             </div>
-            <div id="dropdownMenu" className={`${styles.dropdownMenu} ${isScrolled? `${styles.scrolled}`: ''}`}>
-                <NavLink to="/" end>Home</NavLink>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
-                <NavLink to="/resorts">Resorts</NavLink>
+            <div id="dropdownMenu" className={`${styles.dropdownMenu} ${isScrolled? `${styles.scrolled}`: ''} ${isDropdownOpen? `${styles.open}`: ''}`}>
+                <NavLink to="/" onClick={closeDropdown} end>Home</NavLink>
+                <NavLink to="/about" onClick={closeDropdown}>About</NavLink>
+                <NavLink to="/contact" onClick={closeDropdown}>Contact</NavLink>
+                <NavLink to="/resorts" onClick={closeDropdown}>Resorts</NavLink>
             </div>
         </div>
     )
