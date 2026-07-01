@@ -1,32 +1,41 @@
-import { style } from "framer-motion/client"
-import styles from "./Contact.module.css"
-import { Building, Building2, Locate, LocateIcon, Mail, MapPin, Phone } from "lucide-react"
-
+// src/pages/Contact/Contact.jsx
+import { useState } from "react";
+import styles from "./Contact.module.css";
+import { Building2, Mail, Phone } from "lucide-react";
 
 export function Contact() {
+    const [formData, setFormData] = useState({
+        firstName: '', lastName: '', resortCategory: 'water villa with pool', date: '', people: '', extraDetails: ''
+    });
 
-    return(
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.id]: e.target.value });
+    };
+
+    return (
         <div className={styles["contact-page"]}>
             <div className={styles.contactCard}>
+                
+                {/* Brand Showcase Column */}
                 <div className={styles.contactLeft}>
                     <h2>Crafting your unwritten legacy</h2>
                     <ul className={styles.contactItems}>
                         <li>
-                            <Building2 color="white" size={36}/>
+                            <Building2 className={styles.icon} size={28} />
                             <div>
                                 <h3>Headquarters</h3>
-                                <p>Heily Offices Pvt Ltd, Pallath Sqaure, FACT Kalamassery Rd, Kalamassery P.O, Ernakulam-683104</p>
+                                <p>Heily Offices Pvt Ltd, Pallath Square, FACT Kalamassery Rd, Kalamassery P.O, Ernakulam-683104</p>
                             </div>
                         </li>
                         <li>
-                            <Phone color="white" size={36}/>
+                            <Phone className={styles.icon} size={28} />
                             <div>
                                 <h3>Phone</h3>
-                                <p>+918089082841</p>
+                                <p>+91 80890 82841</p>
                             </div>
                         </li>
                         <li>
-                            <Mail color="white" size={36}/>
+                            <Mail className={styles.icon} size={28} />
                             <div>
                                 <h3>E-mail</h3>
                                 <p>maldivesluxevoyages@gmail.com</p>
@@ -34,53 +43,60 @@ export function Contact() {
                         </li>
                     </ul>
                 </div>
+
+                {/* Intelligent 2-Column Booking Engine Form */}
                 <div className={styles.contactForm}>
-                    <div>
-                        <h2>Begin the Journey.</h2>
+                    <div className={styles.formHeader}>
+                        <h2>Begin the Journey</h2>
                         <p>Every voyage is bespoke. Tell us about the vision you wish to bring to life.</p>
                     </div>
-                    <form action="" className={styles.form}>
-                        <label htmlFor="firstName">
-                            <h6>First name :</h6>
-                            <input type="text" id="firstName" required/>
+                    
+                    <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
+                        <label htmlFor="firstName" className={styles.formField}>
+                            <h6>First name *</h6>
+                            <input type="text" id="firstName" required value={formData.firstName} onChange={handleChange} />
                         </label>
-                        <span>
-                            <label htmlFor="lastName">
-                                <h6>Last name :</h6>
-                                <input type="text" id="lastName" />
-                            </label>
-                            <label htmlFor="resortCategory">
-                                <h6>Resort Category :</h6>
-                                <select id="resortCategory">
-                                    <option value="beach villa">Beach Villa</option>
-                                    <option value="beach villa with pool">Beach Villa with Pool</option>
-                                    <option value="deluxe beach villa">Deluxe Beach Villa</option>
-                                    <option value="water villa">Water Villa</option>
-                                    <option value="water villa with pool">Water Villa with Pool</option>
-                                </select>
-                            </label>
-                        </span>
-                        <span>
-                            <label htmlFor="date">
-                                <h6>Date of Travel</h6>
-                                <input type="text" placeholder="Oct 12-16,2026" id="date" required/>
-                            </label>
-                            <label htmlFor="people">
-                                <h6>No. of People Travelling</h6>
-                                <input type="text" id="people" required/>
-                            </label>
-                        </span>
-                        <label htmlFor="extraDetails">
-                            <h6>Extra details</h6>
-                            <textarea name="details" id="extraDetails"></textarea>
+                        
+                        <label htmlFor="lastName" className={styles.formField}>
+                            <h6>Last name</h6>
+                            <input type="text" id="lastName" value={formData.lastName} onChange={handleChange} />
                         </label>
-                        <button className={styles.submitBtn} type="submit">
-                            Send
-                        </button>
+                        
+                        <label htmlFor="resortCategory" className={`${styles.formField} ${styles.fullWidthMobile}`}>
+                            <h6>Resort Category</h6>
+                            <select id="resortCategory" value={formData.resortCategory} onChange={handleChange}>
+                                <option value="beach villa">Beach Villa</option>
+                                <option value="beach villa with pool">Beach Villa with Pool</option>
+                                <option value="deluxe beach villa">Deluxe Beach Villa</option>
+                                <option value="water villa">Water Villa</option>
+                                <option value="water villa with pool">Water Villa with Pool</option>
+                            </select>
+                        </label>
+                        
+                        <label htmlFor="date" className={styles.formField}>
+                            <h6>Date of Travel *</h6>
+                            <input type="text" placeholder="Oct 12-16, 2026" id="date" required value={formData.date} onChange={handleChange} />
+                        </label>
+                        
+                        <label htmlFor="people" className={styles.formField}>
+                            <h6>No. of Guests *</h6>
+                            <input type="number" id="people" required min="1" value={formData.people} onChange={handleChange} />
+                        </label>
+                        
+                        <label htmlFor="extraDetails" className={`${styles.formField} ${styles.fullWidth}`}>
+                            <h6>Bespoke Requests & Details</h6>
+                            <textarea id="extraDetails" name="details" value={formData.extraDetails} onChange={handleChange} placeholder="Dietary profiles, yacht transfers, celebratory milestones..."></textarea>
+                        </label>
+                        
+                        <div className={styles.btnWrapper}>
+                            <button className={styles.submitBtn} type="submit">
+                                Request Bespoke Itinerary
+                            </button>
+                        </div>
                     </form>
                 </div>
+
             </div>  
         </div>
-    )
-
+    );
 }
